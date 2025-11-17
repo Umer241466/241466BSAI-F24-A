@@ -46,7 +46,7 @@ public:
 
     int front() const {
         if (empty()) {
-            cout << "List is empty.\n";
+            cout << "List is empty"<<endl;
             return -1;
         }
         return list_head->retrieve();
@@ -54,7 +54,7 @@ public:
 
     int end() const {
         if (empty()) {
-            cout << "List is empty.\n";
+            cout << "List is empty"<<endl;
             return -1;
         }
 
@@ -131,7 +131,7 @@ public:
 
     int pop_front() {
         if (empty()) {
-            cout << "List is empty.\n";
+            cout << "List is empty"<<endl;
             return -1;
         }
 
@@ -162,7 +162,7 @@ public:
 
     int pop_end() {
         if (empty()) {
-            cout << "List is empty.\n";
+            cout << "List is empty"<<endl;
             return -1;
         }
 
@@ -213,7 +213,7 @@ public:
     }
     void display() const {
         if (empty()) {
-            cout << "List is empty.\n";
+            cout << "List is empty"<<endl;
             return;
         }
 
@@ -257,4 +257,5 @@ int main() {
     cout << "Erase 20 " << cl.erase(20) << endl;
     cl.display();
     return 0;
+
 }
