@@ -37,7 +37,7 @@ public:
 
     int front() const {
         if (empty()) {
-            cout << "List is empty.\n";
+            cout << "List is empty"<<endl;
             return -1;
         }
         return head()->retrieve();
@@ -45,7 +45,7 @@ public:
 
     int end() const {
         if (empty()) {
-            cout << "List is empty.\n";
+            cout << "List is empty"<<endl;
             return -1;
         }
         Node* ptr = head();
@@ -80,7 +80,7 @@ public:
 
     int pop_front() {
         if (empty()) {
-            cout << "List is empty.\n";
+            cout << "List is empty"<<endl;
             return -1;
         }
         int val = list_head->retrieve();
@@ -92,7 +92,7 @@ public:
 
     int pop_end() {
         if (empty()) {
-            cout << "List is empty.\n";
+            cout << "List is empty"<<endl;
             return -1;
         }
         if (list_head->next() == nullptr) {
@@ -142,7 +142,7 @@ public:
     void display() const {
         for (Node* ptr = head(); ptr != nullptr; ptr = ptr->next())
             cout << ptr->retrieve() << " -> ";
-        cout << "NULL\n";
+        cout << "Nullptr"<<endl;
     }
 };
 int main() {
@@ -170,4 +170,5 @@ int main() {
     cout << "Erase 20 " << list.erase(20) << endl;
     list.display();
     return 0;
+
 }
